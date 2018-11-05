@@ -198,10 +198,11 @@
 }
 #prvaslika, #drugaslika, #trecaslika, #cetvrtaslika, #petaslika, #sestaslika{
     margin: 0;
-    /* width: 25%; */
-    display: inline-block;
     text-align: center;
     padding:1%;
+}
+#prvaslika{
+    padding-top: 5.5%;
 }
 .poravnajSaLijeveStrane
 {
@@ -219,26 +220,32 @@
 /* Services */
 .Services{
 
-
     background-color:#d0d744;
     text-align: center;
     padding-bottom: 25px;
-    margin-left:-2.5%;
+  
 
 }
 .sedmaslika{
+   
     width: 100%;
     height: auto;
+
+   
 }
+.dokaz{
+    margin-left:5%;
+    margin-right: 10%;
+}
+
 .Services h1{
     text-align: center;
     padding-bottom: 10%;
 }
 .servistext{
     text-align: left;
-    padding: 5px 0px 5px 0px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.1em;
+    font-size: 1.3em;
 
 }
 
@@ -254,9 +261,7 @@
     text-align: center;
     padding-bottom: 4%;
 }
-/* .Kontakt_unutrasnji{
-    margin-top: 3%;
-}  */
+
 .KontaktLijevo{
 
     font-size: 1.1em;
