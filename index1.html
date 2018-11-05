@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>MUMFORD</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage full-screen navigation and sections control menu." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" />
+	<meta name="Resource-type" content="Document" />
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--Stilovi za sve elemente-->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/stilovi.css" />
+    <!-- Skripta za buttone-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="js/skripta.js"></script>
+
+	<!-- <link rel="stylesheet" type="text/css" href="examples.css" /> -->
+	    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+
+
+</head>
+<body>
+    <!-- Navigacijski bar -->
+    <div class="mynav">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="logobutton1">Mumford</div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+             
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                      <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ABOUT
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="index1.html#hrefquality">QUALITY&COMPLIANCE</a>
+                        <a class="dropdown-item" href="index1.html#hrefindustry">INDUSTRY BODIES</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index1.html#hrefproduce">PRODUCE <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index1.html#hrefservices">SERVICES</a>
+                    </li>
+    
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       CONTACT
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="farm.html">MUMFORD FARM</a>
+                        </div>
+                    </li>
+                    
+                  </ul>
+                
+                </div>
+              </nav>
+        </div>
+          
+<div id="fullpage">
+    <!-- Pocetna sekcija - slider sa slikama -->
+    <div class="section fp-auto-height" id ="section0">
+            <div class="intro">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                  <!-- Prvi slide -Postavi pozadinsku sliku za ovaj slide u linku ispod-->
+                  <div class="carousel-item active" style="background-image: url('slike/placeholder.png')">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3>Prva slika</h3>
+                      <p>Ovo je opis prve slike</p>
+                    </div>
+                  </div>
+                <!-- Drugi slide -Postavi pozadinsku sliku za ovaj slide u linku ispod-->
+                  <div class="carousel-item" style="background-image: url('slike/placeholder.png')">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3>Druga slika</h3>
+                      <p>Ovo je opis druge slike</p>
+                    </div>
+                  </div>
+                <!-- Treci slide -Postavi pozadinsku sliku za ovaj slide u linku ispod-->
+                  <div class="carousel-item" style="background-image: url('slike/placeholder.png')">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3>Treca slika</h3>
+                      <p>Ovo je opis trece slike</p>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+    </div>
+    <!-- Prva sekcija - ABOUT -->
+    <div class="section" id="section1">
+            <div class="container"> 
+                <div class="sredina">
+            <div class="intro">
+                    <div class="row ">
+                            <div class="col">
+                   
+                            <div class="miniParagraf">
+                                <a href="about"><h1>
+                                    <span>Naslov</span>
+                                </h1></a>
+                                <p>
+                                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+                                </p>
+                            </div>
+                    
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="col">
+                            <div class="sakrivenitext">
+                                <div class="prvidio" id="hrefquality">
+                                    <h1>
+                                        QUALITY COMPLIANCE
+                                    </h1>
+                                    <p id = "odvedimetu1">
+                                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+                                    </p>
+                                    <button class = "urediButton" id = "prikazikec">Read More ></button>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="drugidio" id="hrefindustry">
+                                    <h1>
+                                        INDUSTRY BODIES
+                                    </h1>
+                                    <p id = "odvedimetu2">
+                                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+                                    </p>
+                                     <button class = "urediButton" id = "prikazidvica">Read More ></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Druga sekcija - PRODUCE -->
+	<div class="section" id="section2">
+        <div class="Produce">
+            <div class="row ">
+                    <div class="col">
+                    <a>
+                            <h1 class="naslov" id="hrefproduce"> PRODUCE </h1>
+                            <p class="podnaslov">We have many diffrent lines but these are our core products</p>
+                            </div>
+                    </div>
+                    </a>
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-4">
+                    <div id = "prvaslika">
+                      <img src = "Slike/banana.png" class="urediSliku">
+                        <h3>Stonefruit</h3>
+                        <p class="poravnajSaLijeveStrane">Lorem ipsum doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            <button class="dugmeRead" onclick="myFunction()">READ MORE...</button></p>
+                        
+                    </div>
+                   </div>
+                    <div class="col-xs-6 col-sm-4">
+                    <div id = "drugaslika">
+                        <p><img src = "Slike/banana.png" class="urediSliku"></p>
+                        <h3>Stonefruit</h3>
+                        <p class="poravnajSaLijeveStrane">Lorem ipsum doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <div id = "trecaslika">
+                        <p><img src = "Slike/banana.png" class="urediSliku"></p>
+                        <h3>Stonefruit</h3>
+                        <p class="poravnajSaLijeveStrane">Lorem ipsum doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                    </div>
+                </div>
+                </div>
+               
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4">
+                    <div id = "cetvrtaslika">
+                        <p><img src = "Slike/banana.png" class="urediSliku"></p>
+                        <h3>Stonefruit</h3>
+                        <p class="poravnajSaLijeveStrane">Lorem ipsum doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                    </div>
+                    </div>
+                   
+                        <div class="col-xs-6 col-sm-4">
+                        <div id = "petaslika">
+                        <p><img src = "Slike/banana.png" class="urediSliku"></p>
+                        <h3>Stonefruit</h3>
+                        <p class="poravnajSaLijeveStrane">Lorem ipsum doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                    </div>
+                   
+                        <div class="col-xs-6 col-sm-4">
+                        <div id = "sestaslika">
+                        <p><img src = "Slike/banana.png" class="urediSliku"></p>
+                        <h3>Stonefruit</h3>
+                        <p class="poravnajSaLijeveStrane">Lorem ipsum doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                </div>
+                </div>
+    </div>
+    </div>
+    
+   <!-- Treca sekcija - SERVICES -->
+            <div class="section" id="section3">
+                <div class="intro">
+                 <div class = "Services" id="hrefservices">
+                 <div class="container">
+                        <div class="row">
+                                <div class="col">
+               
+                       
+                                <h1>SERVICES</h1>
+                </div>              
+                                
+                </div>
+                         <div class="row">
+                         <div class="col">
+                                <div class="podservis">
+                                <img class="sedmaslika" src="slike/placeholder.png" alt="" width="500px" height="370px">
+                                </div>
+                                </div>
+                                <div class="col">
+                                <p class="servistext">Lorem ipsum doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                                </div>    
+                            </div>
+                            </div>
+                
+            </div>
+            </div>
+            </div>
+            
+<!-- Cetvrta sekcija - CONTACTS -->
+
+            <div class="section" id="section4"> 
+                <div class = "Kontakt">
+                    <div class="container">
+                       <div class="row">
+                            <div class="col">
+                                   
+                                            <h1 class="naslov1">CONTACT</h1>  
+                                             </div> 
+                    </div>
+                       </div>
+                           
+                            <div class="row">
+                                <div class="col">
+                                            <div class="Kontakt_unutrasnji"></div>
+                                            <div class="KontaktLijevo">
+                                                <p>
+                                                Lorem ipsum doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                </p>
+                                               <a href="farm.html"><button class = "urediButton">MUMFORD FARMS</button></a> 
+                                            </div>
+                                    </div>
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col">
+                                            <div class="KontaktDesno">
+                                                <div class="KontaktDesno_1">
+                                                <p class="kontaktparagraf">
+                                                    <span class="istaknitekst">Mumford Wholesalers Pty Ltd</span> <br>
+                                                    Stores 49- 52 <br>
+                                                    542 Footscray Road <br>
+                                                    West Melbourne VIC 3003 <br>
+                                                    T : <br>
+                                                    F : <br>
+                                                </p>
+                                                <p class="kontaktparagraf">
+                                                        <span class="istaknitekst">Mumford Farms Pty Ltd</span> <br>
+                                                        119 North South Road <br>
+                                                        Woorinen South VIC 3588 <br>
+                                                        T : <br>
+                                                        F : <br>
+                                                    </p>
+                                                </div>
+                                                </div>
+                                    </div>
+                                    <div class="col">
+                                                <div class="KontaktDesno_2">
+                                                    <p class="kontaktparagraf">
+                                                        <span class="istaknitekst">Postal adress</span>
+                                                        Market Box 76 <br>
+                                                        542 Footscray Road <br>
+                                                        West Melbourne VIC 3003 
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+          <div class="footer">
+              <p class="desnoskroz">
+                  Mumford
+              </p>
+          </div>
+   
+
+<script type="text/javascript" src="js/fullpage.js"></script>
+
+<!-- Vetikalne tocke -->
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['firstPage', 'secondPage', '3rdPage','fourthPage','5thPage'],
+         sectionsColor: ['#ffffff', '#ffffff', '#152741','#d0d744','#3d7cc4'],
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['', '', '', '','']
+    });
+</script>
+ <!--Obavezni fajlovi za jquery, bootstrap (NE DIRATI)--> 
+ 
+ 
+
+
+
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+ <!-- <script type="text/javascript" src="examples.js"></script> -->
+
+</body>
+</html>
